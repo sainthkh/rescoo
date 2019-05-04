@@ -6,24 +6,20 @@
   "esy": {
     "build": "dune build -p #{self.name}",
     "release": {
-      "bin": "hello",
+      "bin": "ppx",
       "includePackages": [
-        "root",
-        "@opam/camomile"
+        "root"
       ]
     }
   },
   "scripts": {
-    "test": "esy x hello"
+    "test": "esy x ppx"
   },
   "dependencies": {
     "@opam/dune": "*",
-    "@opam/lambda-term": "*",
-    "@opam/lwt": "^4.0.0",
-    "ocaml": "~4.6.0"
+    "ocaml": "~4.2.0"
   },
   "devDependencies": {
-    "@opam/merlin": "^3.0.3",
-    "ocaml": "~4.6.0"
+    "ocaml": "~4.2.0"
   }
 }
